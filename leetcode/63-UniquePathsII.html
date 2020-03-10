@@ -1,0 +1,396 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>63. UniquePathsII · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="136-SingleNumber.html" />
+    
+    
+    <link rel="prev" href="62-UniquePaths.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="5-LongestPalindromicSubstring.html">
+            
+                <a href="5-LongestPalindromicSubstring.html">
+            
+                    
+                    5. LongestPalindromicSubstring
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="62-UniquePaths.html">
+            
+                <a href="62-UniquePaths.html">
+            
+                    
+                    62. UniquePaths
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4" data-path="63-UniquePathsII.html">
+            
+                <a href="63-UniquePathsII.html">
+            
+                    
+                    63. UniquePathsII
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="136-SingleNumber.html">
+            
+                <a href="136-SingleNumber.html">
+            
+                    
+                    136. Single Number
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="137-SingleNumberII.html">
+            
+                <a href="137-SingleNumberII.html">
+            
+                    
+                    137. Single Number II
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="239-SlidingWindowMaximum.html">
+            
+                <a href="239-SlidingWindowMaximum.html">
+            
+                    
+                    239. SlidingWindowMaximum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="392-IsSubsequence.html">
+            
+                <a href="392-IsSubsequence.html">
+            
+                    
+                    392. IsSubsequence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="416-PartitionEqualSubsetSum.html">
+            
+                <a href="416-PartitionEqualSubsetSum.html">
+            
+                    
+                    416. PartitionEqualSubsetSum
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >63. UniquePathsII</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="63-unique-paths-ii"><a href="https://leetcode.com/problems/unique-paths-ii/" target="_blank">63. Unique Paths II</a></h1>
+<p><em>Medium</em></p>
+<h1 id="description">DESCRIPTION</h1>
+<p>A robot is located at the top-left corner of a <em>m</em> x <em>n</em> grid (marked &apos;Start&apos; in the diagram below).</p>
+<p>The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked &apos;Finish&apos; in the diagram below).</p>
+<p>Now consider if some obstacles are added to the grids. How many unique paths would there be?</p>
+<p><img src="https://assets.leetcode.com/uploads/2018/10/22/robot_maze.png" alt="img"></p>
+<p>An obstacle and empty space is marked as <code>1</code> and <code>0</code> respectively in the grid.</p>
+<p><strong>Example 1:</strong></p>
+<pre><code>Input:
+[
+  [0,0,0],
+  [0,1,0],
+  [0,0,0]
+]
+Output: 2
+Explanation:
+There is one obstacle in the middle of the 3x3 grid above.
+There are two ways to reach the bottom-right corner:
+1. Right -&gt; Right -&gt; Down -&gt; Down
+2. Down -&gt; Down -&gt; Right -&gt; Right
+</code></pre><h1 id="solution">SOLUTION</h1>
+<h2 id="approach-dynamic-programming">Approach: Dynamic Programming</h2>
+<p>grid[i][j] - the number of ways to reach the position [i][j].</p>
+<p>If [i][j] has an obstacle, grid[i][j] = 0</p>
+<p>Else, grid[i][j] = grid[i - 1][j](move right) + grid[i][j - 1](move down)</p>
+<p>The base cases are:</p>
+<p>For the starter grid, if it is an obstacle, there is no way to move, return 0.</p>
+<p>For the top border, if there is an obstacle, the grid after it should be 0.</p>
+<p>grid[i][0] = isObstavcle ? 0 : grid[i - 1][0];</p>
+<p>The same for the left border.</p>
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">uniquePathsWithObstacles</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[][] obstacleGrid)</span> </span>{
+        <span class="hljs-keyword">int</span> m = obstacleGrid.length, n = obstacleGrid[<span class="hljs-number">0</span>].length;
+        <span class="hljs-keyword">int</span>[][] grid = <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[m][n];
+        <span class="hljs-keyword">if</span>(obstacleGrid[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] == <span class="hljs-number">1</span>)
+            <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">else</span>
+            grid[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>] = <span class="hljs-number">1</span>;
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; m; i++) {
+            grid[i][<span class="hljs-number">0</span>] = obstacleGrid[i][<span class="hljs-number">0</span>] == <span class="hljs-number">1</span> ? <span class="hljs-number">0</span> : grid[i - <span class="hljs-number">1</span>][<span class="hljs-number">0</span>];
+        }
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt; n; j++) {
+            grid[<span class="hljs-number">0</span>][j] = obstacleGrid[<span class="hljs-number">0</span>][j] == <span class="hljs-number">1</span> ? <span class="hljs-number">0</span> : grid[<span class="hljs-number">0</span>][j - <span class="hljs-number">1</span>];
+        }
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i = <span class="hljs-number">1</span>; i &lt; m; i++) {
+            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> j = <span class="hljs-number">1</span>; j &lt; n; j++) {
+                grid[i][j] = obstacleGrid[i][j] == <span class="hljs-number">1</span> ? <span class="hljs-number">0</span> : grid[i - <span class="hljs-number">1</span>][j] + grid[i][j - <span class="hljs-number">1</span>];
+            }
+        }
+        <span class="hljs-keyword">return</span> grid[m - <span class="hljs-number">1</span>][n - <span class="hljs-number">1</span>];
+    }
+}
+</code></pre>
+<p><strong>Complexity Analysis</strong></p>
+<ul>
+<li>Time Complexity: O(m * n)</li>
+<li>Space Complexity: O(m * n)</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="62-UniquePaths.html" class="navigation navigation-prev " aria-label="Previous page: 62. UniquePaths">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="136-SingleNumber.html" class="navigation navigation-next " aria-label="Next page: 136. Single Number">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"63. UniquePathsII","level":"1.4","depth":1,"next":{"title":"136. Single Number","level":"1.5","depth":1,"path":"leetcode/136-SingleNumber.md","ref":"leetcode/136-SingleNumber.md","articles":[]},"previous":{"title":"62. UniquePaths","level":"1.3","depth":1,"path":"leetcode/62-UniquePaths.md","ref":"leetcode/62-UniquePaths.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"leetcode/63-UniquePathsII.md","mtime":"2020-03-09T15:09:57.120Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T01:26:54.656Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
