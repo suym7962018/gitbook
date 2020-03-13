@@ -102,7 +102,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="5-LongestPalindromicSubstring.html">
+        <li class="chapter " data-level="1.2" data-path="1-TwoSum.html">
+            
+                <a href="1-TwoSum.html">
+            
+                    
+                    1. TwoSum
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="5-LongestPalindromicSubstring.html">
             
                 <a href="5-LongestPalindromicSubstring.html">
             
@@ -115,7 +128,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="62-UniquePaths.html">
+        <li class="chapter " data-level="1.4" data-path="62-UniquePaths.html">
             
                 <a href="62-UniquePaths.html">
             
@@ -128,7 +141,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="63-UniquePathsII.html">
+        <li class="chapter " data-level="1.5" data-path="63-UniquePathsII.html">
             
                 <a href="63-UniquePathsII.html">
             
@@ -141,7 +154,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="136-SingleNumber.html">
+        <li class="chapter " data-level="1.6" data-path="136-SingleNumber.html">
             
                 <a href="136-SingleNumber.html">
             
@@ -154,7 +167,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="137-SingleNumberII.html">
+        <li class="chapter " data-level="1.7" data-path="137-SingleNumberII.html">
             
                 <a href="137-SingleNumberII.html">
             
@@ -167,7 +180,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.7" data-path="239-SlidingWindowMaximum.html">
+        <li class="chapter active" data-level="1.8" data-path="239-SlidingWindowMaximum.html">
             
                 <a href="239-SlidingWindowMaximum.html">
             
@@ -180,7 +193,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="392-IsSubsequence.html">
+        <li class="chapter " data-level="1.9" data-path="392-IsSubsequence.html">
             
                 <a href="392-IsSubsequence.html">
             
@@ -193,7 +206,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.9" data-path="416-PartitionEqualSubsetSum.html">
+        <li class="chapter " data-level="1.10" data-path="416-PartitionEqualSubsetSum.html">
             
                 <a href="416-PartitionEqualSubsetSum.html">
             
@@ -270,19 +283,7 @@ Window position                Max
  1  3  -1  -3  5 [3  6  7]      7
 </code></pre><h1 id="solution">SOLUTION</h1>
 <h2 id="approach-sliding-window">Approach: Sliding Window</h2>
-<p>For example, nums=[1, 2, 2, 1, 6, 2, 1].</p>
-<p>Convert each integer into binary, count the number of ones for each digit. Since every integer appears three times except the single one, the count numbers for each digit should be divided by 3. If some digits can&apos;t, the remainder must be the digits of the single number.</p>
-<pre><code>        0 0 1
-        0 1 0
-        0 1 0
-        0 0 1
-        1 1 0
-        0 1 0
-        0 0 1
----------------
-        1 4 3 (Count the number of ones for each digit)
-%3      1 1 0 = 6
-</code></pre><pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
+<pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Solution</span> </span>{
     <span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span>[] maxSlidingWindow(<span class="hljs-keyword">int</span>[] nums, <span class="hljs-keyword">int</span> k) {
         <span class="hljs-keyword">if</span>(nums.length == <span class="hljs-number">0</span>)
             <span class="hljs-keyword">return</span> <span class="hljs-keyword">new</span> <span class="hljs-keyword">int</span>[]{};
@@ -356,7 +357,7 @@ Window position                Max
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"239. SlidingWindowMaximum","level":"1.7","depth":1,"next":{"title":"392. IsSubsequence","level":"1.8","depth":1,"path":"leetcode/392-IsSubsequence.md","ref":"leetcode/392-IsSubsequence.md","articles":[]},"previous":{"title":"137. Single Number II","level":"1.6","depth":1,"path":"leetcode/137-SingleNumberII.md","ref":"leetcode/137-SingleNumberII.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"leetcode/239-SlidingWindowMaximum.md","mtime":"2020-03-10T01:30:06.964Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-10T01:26:54.656Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"239. SlidingWindowMaximum","level":"1.8","depth":1,"next":{"title":"392. IsSubsequence","level":"1.9","depth":1,"path":"leetcode/392-IsSubsequence.md","ref":"leetcode/392-IsSubsequence.md","articles":[]},"previous":{"title":"137. Single Number II","level":"1.7","depth":1,"path":"leetcode/137-SingleNumberII.md","ref":"leetcode/137-SingleNumberII.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"leetcode/239-SlidingWindowMaximum.md","mtime":"2020-03-10T20:16:18.294Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-13T02:02:50.091Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
