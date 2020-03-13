@@ -1,6 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
+* [1. TwoSum](leetcode/1-TwoSum.md)
 * [5. LongestPalindromicSubstring](leetcode/5-LongestPalindromicSubstring.md)
 * [62. UniquePaths](leetcode/62-UniquePaths.md)
 * [63. UniquePathsII](leetcode/63-UniquePathsII.md)

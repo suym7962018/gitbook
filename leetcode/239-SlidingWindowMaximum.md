@@ -27,25 +27,6 @@ Window position                Max
 
 ## Approach: Sliding Window
 
-For example, nums=[1, 2, 2, 1, 6, 2, 1].
-
-Convert each integer into binary, count the number of ones for each digit. Since every integer appears three times except the single one, the count numbers for each digit should be divided by 3. If some digits can't, the remainder must be the digits of the single number.
-
-```
-		0 0 1
-		0 1 0
-		0 1 0
-		0 0 1
-		1 1 0
-		0 1 0
-		0 0 1
----------------
-		1 4 3 (Count the number of ones for each digit)
-%3  	1 1 0 = 6
-```
-
-
-
 ```java
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
